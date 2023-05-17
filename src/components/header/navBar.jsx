@@ -3,10 +3,16 @@ import { BrowserRouter } from 'react-router-dom';
 import NavBar from './navBarProps';
 
 function menuNavBar() {
+  
+  const navIzquierda = ['Ofertas' , 'Tienda Oficiales' , 'Vender' ,'Ayuda'];
+  const navDerecha = ['Crear Cuenta' , 'Ingresar' , 'Mis Compras'];
+  
   return (
     <BrowserRouter>
-      <NavBar enlaces={['Ofertas' , 'Tienda Oficiales' , 'Vender' ,'Ayuda']} />
-    </BrowserRouter>
+      
+      <NavBar enlacesIzquierda={navIzquierda} enlacesDerecha={navDerecha}/>
+      
+ </BrowserRouter>
   );
 }
 

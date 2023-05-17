@@ -2,9 +2,10 @@ import React from 'react';
 import logo from '../../assets/images/logo-mercado-liebre.svg'
 import '../../assets/css/App.css';
 
-function HeaderTop() {
+function HeaderTop(props) {
   return (
-    <section className="header-top">
+    <React.StrictMode>
+   <section className="header-top">
       <div className="imagen-mercado-libre">
         <a href="/">
           <img src={logo} alt="logo" />
@@ -22,6 +23,8 @@ function HeaderTop() {
         </p>
       </div>
     </section>
+  
+     </React.StrictMode>
   );
 }
 
