@@ -1,12 +1,15 @@
 import React from "react";
 import "./assets/css/App.css";
-import NavBar from "./components/header/navBar";
-import HeaderTop from "./components/header/headerTop";
+import ContentRowTop from "./components/ContentRowTop";
+import ContentRowCenter from "./components/ContentRowCenter";
+import Footer from './components/common/Footer'
+
 function App() {
   return (
     <React.StrictMode>
-      <HeaderTop />
-      <NavBar />
+      <ContentRowTop />
+      <ContentRowCenter/>
+      <Footer />
     </React.StrictMode>
   );
 }

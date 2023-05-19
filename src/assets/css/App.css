@@ -26,6 +26,9 @@ body {
 }
 
 /*-------------------------------------- HEADER ----------------------------------------- */
+header{
+  background-color: var(--amarrillo);
+}    
 
   .header-top {
     display: flex;
@@ -54,7 +57,9 @@ body {
   
 }
 
-
+a {
+margin-left: 1rem;
+}
 
 .main-navbar {
   display: inline-block;
