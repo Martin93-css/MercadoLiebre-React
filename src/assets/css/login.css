@@ -1,0 +1,47 @@
+
+
+:root {
+  --amarrillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --grisF: #666;
+  --GrisC: #ebebeb;
+  --Verde: #39b54a;
+}
+
+
+
+/* --------------------------Main------------------------ */
+
+form {
+    margin: 1rem 1rem;
+    
+    /* display: flex; */
+    
+}
+
+input {
+    
+    width: 100%;
+    margin-bottom: 20px ;
+    border:solid 1px rgb(241, 235, 235);
+    padding: 2px 2px
+}
+
+
+   
+main form button {
+     width:100%;
+    background-color: var(--celeste);
+    color: white;
+    font-family: sans-serif;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 0.7rem;
+  
+
+}
+
+button:hover {
+  background-color: #0022AA;
+}

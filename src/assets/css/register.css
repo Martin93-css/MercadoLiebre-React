@@ -1,0 +1,91 @@
+:root {
+    --amarrillo: #eac926;
+    --azul: #03264c;
+    --celeste: #1259c3;
+    --grisF: #666;
+    --GrisC: #ebebeb;
+    --Verde: #39b54a;
+  }
+/* --------------------------Main------------------------ */
+  main{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  main form {
+    width: 90%;
+  }
+  
+  .calendario {
+    margin-bottom: 1rem;
+    
+  
+  }
+  
+  
+  
+  .form-control input {
+    margin: 1rem 1rem;
+    width: 80%;
+    padding: 10px 0 10px 0;
+    border-radius: 5px;
+    border-color: #666;
+  }
+  
+  main form h2 {
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    margin: 1rem 0 1rem 0;
+  }
+  .registro {
+    display: flex;
+    gap: 10%;
+  }
+  
+  .registro button {
+    padding: 10px 20px 10px 20px;
+    margin-top: 1rem;
+    background-color: #03264c;
+    color: #ebebeb;
+    font-family: sans-serif;
+    border-radius: 5px;
+  }
+  
+  
+  .venta-compra input {
+    margin-left: 1rem;
+   }
+  
+   .main{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 0;
+  }
+  
+  
+  .tipoUsuario {
+    display: flex;
+    border: 0;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  .tipoUsuario legend {
+    font-weight: bolder;
+      font-size: 1.5em;
+      font-family: sans-serif;
+      margin: 1rem 0 1rem 0;
+  
+  }
+  
+  
+  ul li {
+    list-style-type: none;
+  }

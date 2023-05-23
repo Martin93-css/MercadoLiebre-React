@@ -67,11 +67,30 @@ margin-left: 1rem;
   background-color: var(--amarrillo);
 }
 
-.barra-de-busqueda {
- 
-   width: 50%;
-  
-  
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.bottom-search input {
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  height: 2rem;
+}
+
+.search-button {
+  position: relative;
+  /* Otros estilos */
+}
+
+#search-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -120%);
 }
 
 

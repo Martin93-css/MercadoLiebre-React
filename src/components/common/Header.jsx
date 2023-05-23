@@ -13,15 +13,23 @@ function Header(props) {
    <div>
    <section className="header-top">
         <div className="imagen-mercado-libre">
-          <a href="/">
+          <Link to="/">
             <img src={logo} alt="logo" />
-          </a>
+          </Link>
         </div>
 
-        <form action="buscar" method="POST">
-          <input type="search" name="buscador" placeholder="Buscar productos" className="barra-de-busqueda" />
-          <i className="fas fa-search"></i>
-        </form>
+        <form method="get" action="/search" className="search-bar">
+  <div className="bottom-search">
+    <input type="text" placeholder="Search show" name="search" />
+  </div>
+  <div className="bottom-search">
+    <button type="submit" className="search-button">
+      <i className="fas fa-search" id="search-icon"></i>
+    </button>
+  </div>
+</form>
+
+
 
         <div className="compra-en-cuotas">
           <p>
@@ -35,13 +43,13 @@ function Header(props) {
           <ul className="navbar-derecho">
             <li>
               {props.enlacesIzquierda.map((enlace, i) => (
-                <Link to="#" key={enlace + i}> {enlace} </Link>
+                <Link to={"/" + enlace.toLowerCase().replace(" ", "-")} key={enlace + i}> {enlace} </Link>
               ))}
             </li>
           </ul>
           <ul className="navbar-izquierdo">
             <li> {props.enlacesDerecha.map((enlace, i) => (
-                <Link to="#" key={enlace + i}> {enlace} </Link>
+                <Link to={"/" + enlace.toLowerCase().replace(" ", "-")} key={enlace + i}> {enlace} </Link>
               ))} </li>
           </ul>
         </nav>

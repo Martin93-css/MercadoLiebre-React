@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+
 import Header from '../common/Header.jsx';
 import '../../assets/css/App.css'
 
@@ -9,9 +9,9 @@ function NavBar() {
   const navDerecha = ['Crear Cuenta', 'Ingresar', 'Mis Compras'];
 
   return (
-    <BrowserRouter>
+    
       <Header enlacesIzquierda={navIzquierda}  enlacesDerecha={navDerecha} />
-    </BrowserRouter>
+    
   );
 }
 

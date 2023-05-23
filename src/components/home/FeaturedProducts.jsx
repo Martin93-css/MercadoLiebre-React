@@ -12,9 +12,17 @@ export default class FeaturedProducts extends Component {
     fetch("http://localhost:3008/api/productos")
       .then((response) => response.json())
       .then((data) => {
-        //sconsole.log(data);
+        const productsWithDiscount = data.data.map((product) => {
+          const discountedPrice = product.price - (product.price * product.discount) / 100;
+          console.log(discountedPrice)
+          return {
+            ...product,
+            discountedPrice,
+          };
+        });
+
         this.setState({
-          products: data.data,
+          products: productsWithDiscount,
         });
       })
       .catch((error) => console.log(error));
@@ -37,10 +45,13 @@ export default class FeaturedProducts extends Component {
                 <i className="fas fa-truck truck"></i>
               </div>
               <div className="precio-descuento">
-                <p className="precio">{product.price}</p>
+                <p className="precio">
+                  <del>{product.price}</del>
+                </p>
                 <p className="descuento">{product.discount}% off</p>
               </div>
               <h3 className="nombre-producto">{product.name}</h3>
+              <p className="precio-descuento">${product.discountedPrice}</p>
             </div>
           </article>
         ))}
@@ -48,4 +59,3 @@ export default class FeaturedProducts extends Component {
     );
   }
 }
-
