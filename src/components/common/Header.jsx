@@ -2,9 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import banner from '../../assets/images/img-home-banner.jpg'
 import logo from '../../assets/images/logo-mercado-liebre.svg'
-function NavBarProps(props) {
-  
-  
+
+
+
+function Header(props) {
+
+  console.log(props.enlacesIzquierda)
   return (
     <React.Fragment>
    <div>
@@ -26,7 +29,7 @@ function NavBarProps(props) {
           </p>
         </div>
       </section>
-      <header>
+      <header></header>
         {/* Ejemplo de enlace interno */}
         <nav className="main-navbar">
           <ul className="navbar-derecho">
@@ -46,7 +49,7 @@ function NavBarProps(props) {
         <i className="fas fa-bars"></i>
       </div>
      
-      </header>
+      
     </div>
      <span className="banner"
      ><img src={ banner } alt="fotoBanner"
@@ -55,4 +58,4 @@ function NavBarProps(props) {
   </React.Fragment>);
 }
 
-export default NavBarProps;
+export default Header;

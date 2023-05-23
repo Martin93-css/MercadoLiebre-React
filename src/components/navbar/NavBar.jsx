@@ -1,7 +1,8 @@
-
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import NavEnlaces from '../common/Header';
+import Header from '../common/Header.jsx';
+import '../../assets/css/App.css'
+
 
 function NavBar() {
   const navIzquierda = ['Ofertas', 'Tienda Oficiales', 'Vender', 'Ayuda'];
@@ -9,9 +10,11 @@ function NavBar() {
 
   return (
     <BrowserRouter>
-      <NavEnlaces enlacesIzquierda={navIzquierda} enlacesDerecha={navDerecha} />
+      <Header enlacesIzquierda={navIzquierda}  enlacesDerecha={navDerecha} />
     </BrowserRouter>
   );
 }
 
 export default NavBar;
+
+

@@ -12,7 +12,7 @@ export default class FeaturedProducts extends Component {
     fetch("http://localhost:3008/api/productos")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        //sconsole.log(data);
         this.setState({
           products: data.data,
         });

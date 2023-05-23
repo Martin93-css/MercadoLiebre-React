@@ -1,15 +1,13 @@
 import React from "react";
 import "./assets/css/App.css";
-import ContentRowTop from "./components/ContentRowTop";
-import ContentRowCenter from "./components/ContentRowCenter";
-import Footer from './components/common/Footer'
+import Home from "./pages/Home";
+
 
 function App() {
   return (
     <React.StrictMode>
-      <ContentRowTop />
-      <ContentRowCenter/>
-      <Footer />
+      <Home />
+      
     </React.StrictMode>
   );
 }
