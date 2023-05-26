@@ -12,7 +12,8 @@ function HeroSection() {
         <section className="ultima-visita">
           <h2 className="titulares">Sección: Basado en tu última visita</h2>
           <FeaturedProducts />
-        </section>
+        </section> 
+      
       </main>
     
   );

@@ -46,7 +46,7 @@ export default class FeaturedProducts extends Component {
               </div>
               <div className="precio-descuento">
                 <p className="precio">
-                  <del>{product.price}</del>
+                  {product.discount > 0 ? <del>{product.price}</del> : '' }
                 </p>
                 <p className="descuento">{product.discount}% off</p>
               </div>
