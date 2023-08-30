@@ -1,4 +1,4 @@
-# E-commerse hecho con React
+# E - commerse hecho con React
 <p>
 <b style="color:yellow; font-size:25px">MercadoLiebre</b> es un proyecto personal
 donde muestro una serie de productos que lo traigo desde una API . No use bootstrap
