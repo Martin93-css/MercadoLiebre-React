@@ -22,7 +22,7 @@ Lo que me das destaco del proyecto es :
 ### Importante
 
 <p>
-El proyecto solo muestra los productos que le mando por la api .
+El proyecto solo muestra los productos que le mando por la api . no tiene otra funcionalidad .
 </p>
 
 
