@@ -1,7 +1,7 @@
 # Ecommerse hecho con React
 <p>
 <b>MercadoLiebre</b> es un proyecto personal
-donde muestro una serie de productos que lo traigo desde una API . No use bootstrap
+donde muestro una serie de productos que lo traigo desde una API .
 </p>
 
 
