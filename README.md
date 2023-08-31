@@ -15,7 +15,7 @@ Lo que me das destaco del proyecto es :
 - Que lo hice con React.
 - Que los productos los muestro desde una api.
 - El diseño.
-- Lo organizacion de mis carpetas.
+- Lo organizacion de mis modulos.
 - Que muestre el producto dinamicamente. 
 
 
